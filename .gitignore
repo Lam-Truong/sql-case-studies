@@ -1,0 +1,36 @@
+# Python / uv
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.uv-cache/
+.python-version
+
+# Environment
+.env
+*.env.local
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# VSCode
+.vscode/settings.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data dumps (optional - remove if you want to commit sample data)
+# *.csv
+# *.sql.bak
+
+# Internal scaffolding - not for portfolio
+_template/
+
+# Empty case studies (uncomment as each is completed)
+case_study_2/
+case_study_3/
+case_study_4/
+case_study_5/

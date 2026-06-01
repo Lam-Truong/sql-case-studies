@@ -1,0 +1,18 @@
+[project]
+name = "sql-case-studies"
+version = "0.1.0"
+description = "Portfolio project: 5 SQL case studies solved using PostgreSQL and Jupyter notebooks with %%sql magic."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jupysql>=0.10.10",
+    "psycopg2-binary>=2.9.9",
+    "sqlalchemy>=2.0.30",
+    "pandas>=2.2.0",
+    "ipykernel>=6.29.0",
+    "python-dotenv>=1.0.1",
+    "matplotlib>=3.8.0",
+]
+
+[tool.uv]
+dev-dependencies = []
