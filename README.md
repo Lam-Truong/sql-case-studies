@@ -64,11 +64,15 @@ psql -U postgres -d sql_case_studies -f case_study_1/schema.sql
 
 ## Case Studies
 
-| # | Case Study | Status |
-|---|------------|--------|
-| 1 | IPL 2025 Player Auction | In progress |
+| # | Case Study | Skills | Status |
+|---|------------|--------|--------|
+| 1 | [IPL 2025 Player Auction](case_study_1/solution.ipynb) | Window functions, CTEs, correlated subqueries, conditional aggregation | Completed |
 
 More case studies will be added as they are completed.
+
+### Case Study 1 — IPL 2025 Player Auction
+
+Analysis of the 2025 IPL player auction (228 players across 10 franchises) covering team spending patterns, player valuation by role, and Indian vs. overseas pricing. Ten questions answered in PostgreSQL using window functions (`ROW_NUMBER`, `FIRST_VALUE`, `SUM/AVG OVER`), CTEs, correlated subqueries, and conditional aggregation with `CASE` expressions. Each query is paired with the thought process behind it and a short interpretation of the result.
 
 ## How `%%sql` Magic Works
 
