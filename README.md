@@ -67,12 +67,17 @@ psql -U postgres -d sql_case_studies -f case_study_1/schema.sql
 | # | Case Study | Skills | Status |
 |---|------------|--------|--------|
 | 1 | [IPL 2025 Player Auction](case_study_1/solution.ipynb) | Window functions, CTEs, correlated subqueries, conditional aggregation | Completed |
+| 2 | [T20I Match Analysis (2024)](case_study_2/solution.ipynb) | Window functions (`RANK`), CTEs, string parsing (`split_part`), date functions, `UNION`, win-rate calculation | Completed |
 
 More case studies will be added as they are completed.
 
 ### Case Study 1 — IPL 2025 Player Auction
 
 Analysis of the 2025 IPL player auction (228 players across 10 franchises) covering team spending patterns, player valuation by role, and Indian vs. overseas pricing. Ten questions answered in PostgreSQL using window functions (`ROW_NUMBER`, `FIRST_VALUE`, `SUM/AVG OVER`), CTEs, correlated subqueries, and conditional aggregation with `CASE` expressions. Each query is paired with the thought process behind it and a short interpretation of the result.
+
+### Case Study 2 — T20I Match Analysis (2024)
+
+Analysis of international T20I match results from 2024 covering head-to-head records, team win rankings, winning-margin trends, chasing performance, and venue dominance. Ten questions answered in PostgreSQL using window functions (`RANK` with `PARTITION BY`), CTEs, string parsing with `split_part` to extract numeric margins from text, date functions, `UNION`-based match counting, and null-safe win-rate calculation. Each query is paired with the reasoning behind it and a short interpretation of the result.
 
 ## How `%%sql` Magic Works
 
